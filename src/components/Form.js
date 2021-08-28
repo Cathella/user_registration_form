@@ -37,8 +37,9 @@ export class Form extends Component {
   }
 
   // Handle input change
-  handleChange = (e) => {
+  handleChange = input => e => {
     this.setState({
+      ...this.state,
       [e.target.name]: e.target.value
     })
   }
