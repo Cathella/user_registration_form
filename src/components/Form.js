@@ -16,6 +16,7 @@ export class Form extends Component {
     name: "",
     phone: "",
     grade: "",
+    username: "",
     password: ""
   }
 
@@ -43,21 +44,72 @@ export class Form extends Component {
   }
 
   render() {
+
+    const { step, account, name, phone, grade, username, password } = this.state;
+    const values = { account, name, grade, username, phone, password };
+
     switch(step) {
       case 1:
-        return <Account />
+        return(
+          <Account 
+            nextStep={this.nextStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        )
       case 2:
-        return <Name />
+        return(
+          <Name 
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        )
       case 3:
-        return <Phone />
+        return(
+          <Phone 
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        )
       case 4:
-        return <Grade />
+        return(
+          <Grade 
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        )
       case 5:
-        return <Username />
+        return(
+          <Username 
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        )
       case 6:
-        return <Password />
+        return(
+          <Password 
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        )
       case 7:
-        return <Confirm />
+        return(
+          <Confirm 
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            values={values}
+          />
+        )
       case 8:
         return <Success />
     }
