@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Button, Form, Input, Label, Field, Back } from './Elements'
 
 export class Name extends Component {
   continue = e => {
@@ -15,26 +16,28 @@ export class Name extends Component {
     const { values, handleChange } = this.props
 
     return (
-      <div>
-        <div>
-          <label>
+      <Form>
+        <Field>
+          <Label>
             What is your name?
-          </label>
-        </div>
-        <div>
-          <input 
+          </Label>
+        </Field>
+        <Field>
+          <Input 
             type="text" 
             name="name" 
             onChange={handleChange('name')} 
             defaultValue={values.name} 
             placeholder="Full Name" 
           />
-        </div>
-        <div>
-          <button onClick={this.back}>Back</button>
-          <button onClick={this.continue}>Continue</button>
-        </div>
-      </div>
+        </Field>
+        <Field>
+          <Button onClick={this.continue}>Continue</Button>
+        </Field>
+        <Field>
+          <Back onClick={this.back}>Back</Back>
+        </Field>
+      </Form>
     )
   }
 }
