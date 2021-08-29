@@ -22,7 +22,13 @@ export class Name extends Component {
           </label>
         </div>
         <div>
-          <input type="text" name="name" onChange={handleChange('name')} defaultValue={values.name} placeholder="Full Name" />
+          <input 
+            type="text" 
+            name="name" 
+            onChange={handleChange('name')} 
+            defaultValue={values.name} 
+            placeholder="Full Name" 
+          />
         </div>
         <div>
           <button onClick={this.back}>Back</button>

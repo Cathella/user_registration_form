@@ -17,7 +17,11 @@ export class Account extends Component {
           </label>
         </div>
         <div>
-          <select name="account" onChange={handleChange('account')} defaultValue={values.account}>
+          <select 
+            name="account" 
+            onChange={handleChange('account')} 
+            defaultValue={values.account}
+          >
             <option value="">Select account</option>
             <option value="student">Student</option>
             <option value="teacher">Teacher</option>

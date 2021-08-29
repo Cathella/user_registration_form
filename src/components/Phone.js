@@ -22,7 +22,13 @@ export class Phone extends Component {
           </label>
         </div>
         <div>
-          <input type="tel" name="phone" onChange={handleChange('phone')} defaultValue={values.phone} placeholder="Phone Number" />
+          <input 
+            type="tel" 
+            name="phone" 
+            onChange={handleChange('phone')} 
+            defaultValue={values.phone} 
+            placeholder="Phone Number" 
+          />
         </div>
         <div>
           <button onClick={this.back}>Back</button>
