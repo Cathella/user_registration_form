@@ -28,7 +28,7 @@ export class Name extends Component {
             name="name" 
             onChange={handleChange('name')} 
             defaultValue={values.name} 
-            placeholder="Full Name" 
+            placeholder="Enter Full Name" 
           />
         </Field>
         <Field>

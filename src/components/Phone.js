@@ -28,7 +28,7 @@ export class Phone extends Component {
             name="phone" 
             onChange={handleChange('phone')} 
             defaultValue={values.phone} 
-            placeholder="Phone Number" 
+            placeholder="Enter Phone Number" 
           />
         </Field>
         <Field>

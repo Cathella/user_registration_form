@@ -28,7 +28,7 @@ export class Password extends Component {
             name="password" 
             onChange={handleChange('password')} 
             defaultValue={values.password} 
-            placeholder="Password" 
+            placeholder="Enter Password" 
           />
         </Field>
         <Field>

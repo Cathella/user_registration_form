@@ -28,7 +28,7 @@ export class Username extends Component {
             name="username" 
             onChange={handleChange('username')} 
             defaultValue={values.username} 
-            placeholder="Nickname" 
+            placeholder="Enter Nickname" 
           />
         </Field>
         <Field>

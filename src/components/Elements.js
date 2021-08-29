@@ -26,8 +26,7 @@ export const Form = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  border: 1.4px solid gray;
+  border: 1.4px dashed gray;
   padding: 3em 0;
   display: flex;
   flex-direction: column;
@@ -35,14 +34,30 @@ export const Form = styled.div`
   border-radius: 30px;
   background: #e6f4f4;
   box-sizing: border-box;
+
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  @keyframes example {
+    from {
+      background: #e6f4f4;
+    }
+
+    to {
+      background: #ffeeef;
+    }
+  }
 `
 export const Select = styled.select`
   width: 100%;
-  height: 45px;
+  height: 50px;
+  border: none;
+  border-bottom: 1.4px solid gray;
+  background: transparent;
+  margin-top: 20px;
   box-sizing: border-box;
-  border-radius: 10px;
-  border: 1.4px solid gray;
-  padding: 0 1em;
 
   :focus {
     outline: none;
@@ -57,11 +72,13 @@ export const Label = styled.label`
 `
 export const Input = styled.input`
   width: 100%;
-  height: 45px;
-  border-radius: 10px;
-  border: 1.4px solid gray;
+  height: 50px;
+  border: none;
+  border-bottom: 1.4px solid gray;
+  background: transparent;
   box-sizing: border-box;
-  padding: 0 1em;
+  margin-top: 20px;
+  text-align: center;
 
   :focus {
     outline: none;

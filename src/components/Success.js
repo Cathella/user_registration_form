@@ -16,7 +16,9 @@ export class Success extends Component {
             Thank you for creating an account. Please click the link below to login.
           </p>
         </Field>
-        <Back>Login</Back>
+        <Field>
+          <Button>Login</Button>
+        </Field>
       </Form>
     )
   }
