@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Button } from './Elements'
 
 export class Account extends Component {
   continue = e => {
@@ -28,7 +29,7 @@ export class Account extends Component {
           </select>
         </div>
         <div>
-          <button onClick={this.continue}>Continue</button>
+          <Button onClick={this.continue}>Continue</Button>
         </div>
       </div>
     )
