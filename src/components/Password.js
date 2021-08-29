@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Button, Form, Input, Label, Field, Back } from './Elements'
 
 export class Password extends Component {
   continue = e => {
@@ -15,26 +16,28 @@ export class Password extends Component {
     const { values, handleChange } = this.props
 
     return (
-      <div>
-        <div>
-          <label>
+      <Form>
+        <Field>
+          <Label>
             Enter your secret code
-          </label>
-        </div>
-        <div>
-          <input 
+          </Label>
+        </Field>
+        <Field>
+          <Input 
             type="password" 
             name="password" 
             onChange={handleChange('password')} 
             defaultValue={values.password} 
             placeholder="Password" 
           />
-        </div>
-        <div>
-          <button onClick={this.back}>Back</button>
-          <button onClick={this.continue}>Continue</button>
-        </div>
-      </div>
+        </Field>
+        <Field>
+          <Button onClick={this.continue}>Continue</Button>
+        </Field>
+        <Field>
+          <Back onClick={this.back}>Back</Back>
+        </Field>
+      </Form>
     )
   }
 }

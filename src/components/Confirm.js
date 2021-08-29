@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Button, Form, Label, Field, Back } from './Elements'
 
 export class Confirm extends Component {
   continue = e => {
@@ -16,13 +17,13 @@ export class Confirm extends Component {
     const { values: {account, name, phone, grade, username, password} } = this.props
 
     return (
-      <div>
-        <div>
-          <label>
+      <Form>
+        <Field>
+          <Label>
             Confirm User details
-          </label>
-        </div>
-        <div>
+          </Label>
+        </Field>
+        <Field>
           <p>
             <strong>Account:</strong> {account}
           </p>
@@ -38,12 +39,14 @@ export class Confirm extends Component {
           <p>
             <strong>Username:</strong> {username}
           </p>
-        </div>
-        <div>
-          <button onClick={this.back}>Back</button>
-          <button onClick={this.continue}>Confirm</button>
-        </div>
-      </div>
+        </Field>
+        <Field>
+          <Button onClick={this.continue}>Continue</Button>
+        </Field>
+        <Field>
+          <Back onClick={this.back}>Back</Back>
+        </Field>
+      </Form>
     )
   }
 }

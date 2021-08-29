@@ -1,24 +1,25 @@
 import React, { Component } from 'react'
+import { Button, Form, Label, Field, Back } from './Elements'
 
 export class Success extends Component {
   render() {
 
     return (
-      <div>
-        <div>
-          <h3>
+      <Form>
+        <Field>
+          <Label>
             Success!
-          </h3>
-        </div>
-        <div>
+          </Label>
+        </Field>
+        <Field>
           <p>
             Thank you for creating an account. Please click the link below to login.
           </p>
-        </div>
-        <div>
-          <button>Login</button>
-        </div>
-      </div>
+        </Field>
+        <Field>
+          <Back>Login</Back>
+        </Field>
+      </Form>
     )
   }
 }

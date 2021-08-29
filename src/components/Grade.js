@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Button, Form, Select, Label, Field, Back } from './Elements'
 
 export class Grade extends Component {
   continue = e => {
@@ -15,14 +16,14 @@ export class Grade extends Component {
     const { values, handleChange } = this.props
 
     return (
-      <div>
-        <div>
-          <label>
+      <Form>
+        <Field>
+          <Label>
             Which class are you?
-          </label>
-        </div>
-        <div>
-          <select 
+          </Label>
+        </Field>
+        <Field>
+          <Select 
             name="grade" 
             onChange={handleChange('grade')} 
             defaultValue={values.grade}
@@ -36,13 +37,15 @@ export class Grade extends Component {
             <option value="Primary Five">Primary Five</option>
             <option value="Primary Six">Primary Six</option>
             <option value="Primary Seven">Primary Seven</option>
-          </select>
-        </div>
-        <div>
-          <button onClick={this.back}>Back</button>
-          <button onClick={this.continue}>Continue</button>
-        </div>
-      </div>
+          </Select>
+        </Field>
+        <Field>
+          <Button onClick={this.continue}>Continue</Button>
+        </Field>
+        <Field>
+          <Back onClick={this.back}>Back</Back>
+        </Field>
+      </Form>
     )
   }
 }

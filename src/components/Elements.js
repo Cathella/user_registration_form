@@ -18,10 +18,15 @@ export const Back = styled.button`
   background: transparent;
   text-transform: capitalize;
   text-decoration: underline;
+  cursor: pointer;
 `
 export const Form = styled.div`
-  position: relative;
-  margin: 2em auto 6em;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   border: 1.4px solid gray;
   padding: 3em 0;
   display: flex;
