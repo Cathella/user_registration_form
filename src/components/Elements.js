@@ -43,6 +43,10 @@ export const Select = styled.select`
   border-radius: 10px;
   border: 1.4px solid gray;
   padding: 0 1em;
+
+  :focus {
+    outline: none;
+  }
 ` 
 export const Label = styled.label`
   width: 100%;
@@ -59,6 +63,10 @@ export const Input = styled.input`
   border: 1.4px solid gray;
   box-sizing: border-box;
   padding: 0 1em;
+
+  :focus {
+    outline: none;
+  }
 `
 export const Field = styled.div`
   width: 70%;
