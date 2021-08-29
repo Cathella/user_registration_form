@@ -51,10 +51,9 @@ export const Select = styled.select`
 export const Label = styled.label`
   width: 100%;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: bold;
   box-sizing: border-box;
-  text-transform: capitalize;
 `
 export const Input = styled.input`
   width: 100%;

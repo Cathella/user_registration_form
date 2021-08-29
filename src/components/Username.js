@@ -34,9 +34,7 @@ export class Username extends Component {
         <Field>
           <Button onClick={this.continue}>Continue</Button>
         </Field>
-        <Field>
-          <Back onClick={this.back}>Back</Back>
-        </Field>
+        <Back onClick={this.back}>Back</Back>
       </Form>
     )
   }
