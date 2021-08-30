@@ -3,3 +3,22 @@
 * {
   font-family: 'Lexend', sans-serif;
 }
+
+label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+  height: 50px;
+  border-bottom: 1px solid gray;
+}
+
+label::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  border-bottom: 3px solid #5fa8d3;
+  left: 0;
+  bottom: -1px;
+}

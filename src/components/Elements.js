@@ -56,14 +56,14 @@ export const Select = styled.select`
   border: none;
   border-bottom: 1.4px solid gray;
   background: transparent;
-  margin-top: 20px;
+  // margin-top: 20px;
   box-sizing: border-box;
 
   :focus {
     outline: none;
   }
 ` 
-export const Label = styled.label`
+export const Label = styled.h3`
   width: 100%;
   text-align: center;
   font-size: 1.3em;
@@ -77,18 +77,22 @@ export const Input = styled.input`
   border-bottom: 1.4px solid gray;
   background: transparent;
   box-sizing: border-box;
-  margin-top: 20px;
-  text-align: center;
+  // margin-top: 20px;
+  // text-align: center;
+  padding-top: 20px;
 
   :focus {
     outline: none;
   }
 `
 export const Field = styled.div`
+  position: relative;
   width: 70%;
   box-sizing: border-box;
   margin: 0 auto 1.2em;
-  text-align: center;
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
 `
 
 const Elements = () => {
