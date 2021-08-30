@@ -28,8 +28,12 @@ export class Phone extends Component {
             name="phone" 
             onChange={handleChange('phone')} 
             defaultValue={values.phone} 
-            placeholder="Enter Phone Number" 
+            autoComplete="off"
+            required
           />
+          <label for="phone" className="label-name">
+            <span className="content-name">Phone Number</span>
+          </label>
         </Field>
         <Field>
           <Button onClick={this.continue}>Continue</Button>

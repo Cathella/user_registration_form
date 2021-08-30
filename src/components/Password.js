@@ -28,8 +28,12 @@ export class Password extends Component {
             name="password" 
             onChange={handleChange('password')} 
             defaultValue={values.password} 
-            placeholder="Enter Password" 
+            autoComplete="off"
+            required
           />
+          <label for="password" className="label-name">
+            <span className="content-name">Password</span>
+          </label>
         </Field>
         <Field>
           <Button onClick={this.continue}>Continue</Button>

@@ -28,8 +28,12 @@ export class Username extends Component {
             name="username" 
             onChange={handleChange('username')} 
             defaultValue={values.username} 
-            placeholder="Enter Nickname" 
+            autoComplete="off"
+            required
           />
+          <label for="username" className="label-name">
+            <span className="content-name">Nickname</span>
+          </label>
         </Field>
         <Field>
           <Button onClick={this.continue}>Continue</Button>

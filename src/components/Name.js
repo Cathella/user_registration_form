@@ -27,8 +27,7 @@ export class Name extends Component {
             type="text" 
             name="name" 
             onChange={handleChange('name')} 
-            defaultValue={values.name} 
-            placeholder="Enter Full Name" 
+            defaultValue={values.name}
             autoComplete="off"
             required
           />

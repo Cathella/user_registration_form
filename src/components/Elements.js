@@ -77,8 +77,6 @@ export const Input = styled.input`
   border-bottom: 1.4px solid gray;
   background: transparent;
   box-sizing: border-box;
-  // margin-top: 20px;
-  // text-align: center;
   padding-top: 20px;
 
   :focus {
@@ -90,7 +88,7 @@ export const Field = styled.div`
   width: 70%;
   box-sizing: border-box;
   margin: 0 auto 1.2em;
-  // text-align: center;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 `
