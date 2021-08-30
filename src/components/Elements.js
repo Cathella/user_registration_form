@@ -56,7 +56,6 @@ export const Select = styled.select`
   border: none;
   border-bottom: 1.4px solid gray;
   background: transparent;
-  // margin-top: 20px;
   box-sizing: border-box;
 
   :focus {

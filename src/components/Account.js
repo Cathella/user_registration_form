@@ -23,7 +23,7 @@ export class Account extends Component {
             onChange={handleChange('account')} 
             defaultValue={values.account}
           >
-            <option value="">Select account</option>
+            <option value="">Choose Account</option>
             <option value="student">Student</option>
             <option value="teacher">Teacher</option>
           </Select>
